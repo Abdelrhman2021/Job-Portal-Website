@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Copatible"  content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
+  <title>Apply for the job</title>
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -33,7 +33,7 @@
     </nav>
 
 
-  <a href="#" class="btn" style="margin-top: 0;">post jobs</a>
+  <a href="#" class="btn" style="margin-top: 0;">Post Jobs</a>
 
 
 
@@ -44,24 +44,73 @@
 
 <!--Header section ends-->
 
-<!-- about us section starts -->
-<div class="section-title">about us</div>
+<!--contact us section starts-->
+<div class="section-title">Apply for a Job</div>
 
-<section class="about">
+<section class="contact">
+    
 
-    <img src="imgs/about-img.jpg" alt="">
-    <div class="box">
-        <h3>why choose us?</h3>
-        <p>We aims to simplify the job search and hiring process for both job seekers and employers. 
-          The website offers a user-friendly interface for creating profiles, searching for jobs, 
-          creating job postings, managing applications, and connecting with candidates. 
-          The platform is committed to promoting diversity and inclusion in the workplace and providing a seamless experience for all users.</p>
-          <p><br>Hope you find your job With us.</p>
-             
-                  <a href="contact.html" class="btn">contact us</a>
+
+<form action="" method="post">
+    <h3>Application</h3>
+    <div class="flex">
+        <div class="box">
+            <p>First Name<span>*</span></p>
+            <input type="text" name="name" required maxlength="20"
+            placeholder="Enter your first name" class="input">
+        </div>
+        <div class="box">
+          <p>Last Name<span>*</span></p>
+          <input type="text" name="name" required maxlength="20"
+          placeholder="Enter your last name" class="input">
+      </div>
+        <div class="box">
+            <p>Email<span>*</span></p>
+            <input type="email" name="email" required maxlength="50"
+            placeholder="Enter your email" class="input">
+        </div>
+        <div class="box">
+            <p>Phone Number<span>*</span></p>
+            <input type="tel" name="number" placeholder="Enter your number" class="input" required maxlength="14" pattern="[0-9]*">
+        </div>
+        <div class="box">
+            <p>Experience<span>*</span></p>
+            <select name="role" required class="input">
+                <option value="" selected>Select an option</option>
+                <option value="option1">Undergraduate </option>
+                <option value="option2">Freshgraduate </option>
+                <option value="option3">Less than 1</option>
+                <option value="option4">1-5 </option>
+                <option value="option5">>5 </option>
+            </select>
+        </div>
     </div>
+    <div class="box bd">
+      <p>Birthdate<span>*</span></p><br>
+      <input type="date" id="birthdate" name="birthdate" required>
+    </div>
+    <div class="box">
+      <p>Gender<span>*</span></p><br>
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="gender" value="male" required> Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" required> Female
+        </label>
+      </div>
+    </div>
+    <input type="submit" value="Submit" name="send" class="btn" >
+</form>
+
+
 </section>
-<!-- about us ends -->
+
+
+
+
+
+<!--contact us section ends-->
 
 
 

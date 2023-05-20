@@ -7,7 +7,7 @@
   <title>All Jobs</title>
 
 
-  <link rel="stylesheet" href="D:\ECU\8th TERM\Internet Programming\Job Portal Website\css\style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
  
@@ -25,15 +25,15 @@
 
 
     <nav class="navbar">
-      <a href="home.html">home</a>
-      <a href="about.html">about us</a>
-      <a href="jobs.html">all jobs</a>
-      <a href="contact.html">contact us</a>
-      <a href="login.html">account</a>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="jobs.html">All Jobs</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html">Account</a>
     </nav>
 
 
-  <a href="#" class="btn" style="margin-top: 0;">post jobs</a>
+  <a href="#" class="btn" style="margin-top: 0;">Post Jobs</a>
 
 
 
@@ -44,19 +44,21 @@
 
 <!--Header section ends-->
 
+
+
 <!--job filter section starts-->
 
 <section class="job-filter">
-    <h1 class="heading">filter jobs</h1>
+    <h1 class="heading">Filter Jobs</h1>
     <form action=""method="post">
         <div class="flex">
             <div class="box">
-                <p>job title <span>*</span></p>
+                <p>Job Title <span>*</span></p>
                 <input type="text"name="title"placeholder="keyword, category or company"
                 required maxlength="20" class="input">
             </div>
             <div class="box">
-                <p>job location</p>
+                <p>Job Location</p>
                 <input type="text"name="title"placeholder="city, state or country"
                 required maxlength="50" class="input">
             </div>
@@ -66,13 +68,13 @@
             <div class="dropdown">
                 <input type="text" readonly placeholder="date posted" name="date" 
                 maxlength="20" class="output">
-                <div class="lists">
-                    <p class="items">today</p>
-                    <p class="items">3 days ago</p>
-                    <p class="items">7 days ago</p>
-                    <p class="items">10 days ago</p>
-                    <p class="items">15 days ago</p>
-                    <p class="items">30 days ago</p>
+                <div class="lists" id="aa">
+                    <p class="items" id="ab">today</p>
+                    <p class="items" id="ac">3 days ago</p>
+                    <p class="items" id="ad">7 days ago</p>
+                    <p class="items" id="ae">10 days ago</p>
+                    <p class="items" id="af">15 days ago</p>
+                    <p class="items" id="ag">30 days ago</p>
                 </div>
             </div>
 
@@ -80,48 +82,48 @@
             <div class="dropdown">
                 <input type="text" readonly name="date" placeholder="estimated salary"  
                 maxlength="20" class="output">
-                <div class="lists">
-                    <p class="items">1k or less</p>
-                    <p class="items">1k - 5k</p>
-                    <p class="items">5k - 10k</p>
-                    <p class="items">10k - 20k</p>
-                    <p class="items">20k - 30k</p>
-                    <p class="items">30k - 40k</p>
-                    <p class="items">40k - 50k</p>
-                    <p class="items">50k - 1 lakh</p>
-                    <p class="items">1 lakh - 5 lakh</p>
-                    <p class="items">5 lakh - 10 lakh</p>
-                    <p class="items">10 lakh - 20 lakh</p>
-                    <p class="items">20 lakh - 50 lakh</p>
-                    <p class="items">50 lakh - 1 crore</p>
-                    <p class="items">1 crore - 5 crore</p>
-                    <p class="items">5 crore - 10 crore</p>
-                    <p class="items">10 crore or more</p>
+                <div class="lists" id="ba">
+                    <p class="items" id="bb">1k or less</p>
+                    <p class="items" id="bc">1k - 5k</p>
+                    <p class="items" id="bd">5k - 10k</p>
+                    <p class="items" id="be">10k - 20k</p>
+                    <p class="items" id="bf">20k - 30k</p>
+                    <p class="items" id="bg">30k - 40k</p>
+                    <p class="items" id="bh">40k - 50k</p>
+                    <p class="items" id="bi">50k - 1 lakh</p>
+                    <p class="items" id="bj">1 lakh - 5 lakh</p>
+                    <p class="items" id="bk">5 lakh - 10 lakh</p>
+                    <p class="items" id="bl">10 lakh - 20 lakh</p>
+                    <p class="items" id="bm">20 lakh - 50 lakh</p>
+                    <p class="items" id="bn">50 lakh - 1 crore</p>
+                    <p class="items" id="bo">1 crore - 5 crore</p>
+                    <p class="items" id="bp">5 crore - 10 crore</p>
+                    <p class="items" id="bq">10 crore or more</p>
                 </div>
             </div>
 
             <div class="dropdown">
                 <input type="text" readonly name="date" placeholder="job type"  
                 maxlength="20" class="output">
-                <div class="lists">
-                    <p class="items">full-time</p>
-                    <p class="items">part-time</p>
-                    <p class="items">intership</p>
-                    <p class="items">contract</p>
-                    <p class="items">temporary</p>
-                    <p class="items">fresher</p>
+                <div class="lists" id="ca">
+                    <p class="items" id="cb">full-time</p>
+                    <p class="items" id="cc">part-time</p>
+                    <p class="items" id="cd">intership</p>
+                    <p class="items" id="ce">contract</p>
+                    <p class="items" id="cf">temporary</p>
+                    <p class="items" id="cg">fresher</p>
                 </div>
             </div>
 
             <div class="dropdown">
                 <input type="text" readonly name="date" placeholder="education level"  
                 maxlength="20" class="output">
-                <div class="lists">
-                    <p class="items">10th pass</p>
-                    <p class="items">12th pass</p>
-                    <p class="items">bachlelor's degree</p>
-                    <p class="items">master's degree</p>
-                    <p class="items">diploma</p>
+                <div class="lists" id="da">
+                    <p class="items" id="db">10th pass</p>
+                    <p class="items" id="dc">12th pass</p>
+                    <p class="items" id="dd">bachlelor's degree</p>
+                    <p class="items" id="de">master's degree</p>
+                    <p class="items" id="df">diploma</p>
                 </div>
             </div>
 
@@ -129,11 +131,11 @@
             <div class="dropdown">
                 <input type="text" readonly name="date" placeholder="work shifts"  
                 maxlength="20" class="output">
-                <div class="lists">
-                    <p class="items">day shift</p>
-                    <p class="items">night shift</p>
-                    <p class="items">flexible shift</p>
-                    <p class="items">fixed shift</p>
+                <div class="lists" id="ea">
+                    <p class="items" id="eb">day shift</p>
+                    <p class="items" id="ec">night shift</p>
+                    <p class="items" id="ed">flexible shift</p>
+                    <p class="items" id="ee">fixed shift</p>
                 </div>
             </div>
         </div>
@@ -141,174 +143,177 @@
     </section>
 
 
-<!--job filter section starts-->
-
-<!--all jobs section ends-->
+<!--job filter section ends-->
 
 
 
-<!--all jobs section ends-->
+
+
+<!--all jobs section starts-->
 
 <section class="jobs-container">
-    <h1 class="heading">all jobs</h1>
-    
-    <div class="box-container">
-        
-      <div class="box">
-              <div class="company">
-            <img src="imgs/icon-1.png" alt="">
-            <div>
-                <h3>IT infosys co.</h3>
-                <p>2 days ago</p>
-             </div>
-           </div>
-         <h3 class="job-title">senior web developer</h3>
-         <p class="location"> <i class="fas fa-map-market-alt"></i> 
-         <span>mumbai , india</span></p>
-         <div class="tags">
-            <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 25k</span></p>
-            <p><i class="fas fa-briefase"></i><span>part-time</span></p>
-            <p><i class="fas fa-clock"></i><span>day shift</span></p>
-         </div>
-        <div class="flex-btn">
-          <a href="view_job.html1" class="btn">view details </a>
-          <button type="submit" class="far fa-heart" name="save"> </button>
-       
-        </div>
-     </div>
-    
+  <h1 class="heading">All Jobs</h1>
   
-      <div class="box">
-            <div class="company">
-          <img src="imgs/icon-2.png" alt="">
-          <div>
-              <h3>all media ltd</h3>
-              <p>2 days ago</p>
+  <div class="box-container">
+      
+    <div class="box" id="10100">
+           <div class="company" id="10101">
+             <img src="imgs/icon-1.png" alt="" id="10102">
+           <div id="10103">
+              <h3 id="10104">IT infosys co.</h3>
+              <p id="10105">2 days ago</p>
+              
            </div>
          </div>
-       <h3 class="job-title">qualified developer</h3>
-       <p class="location"> <i class="fas fa-map-market-alt"></i> 
-       <span>mumbai , india</span></p>
-       <div class="tags">
-          <p><i class="fas fa-indian-rupee-sign"></i><span>9000</span></p>
-          <p><i class="fas fa-briefase"></i><span>full-time</span></p>
-          <p><i class="fas fa-clock"></i><span>flexible shifts</span></p>
+       <h3 class="job-title" id="10106">Senior Web Developer</h3>
+       <p class="location" id="10107"> <i class="fas fa-map-market-alt"></i> 
+       <span>Mumbai , India</span></p>
+       <div class="tags" id="10108">
+          <p><i class="fas fa-indian-rupee-sign" id="10109"></i><span>10k - 25k</span></p>
+          <p><i class="fas fa-briefase" id="10110"></i><span>Part-time</span></p>
+          <p><i class="fas fa-clock" id="10111"></i><span>Day Shift</span></p>
        </div>
       <div class="flex-btn">
-        <a href="view_job.html1" class="btn">view details </a>
+        <a href="view_job.html" class="btn">View Details </a>
         <button type="submit" class="far fa-heart" name="save"> </button>
      
       </div>
    </div>
-     
-      <div class="box">
-            <div class="company">
-          <img src="imgs/icon-3.png" alt="">
-          <div>
-              <h3>software solution</h3>
-              <p>posted today</p>
-           </div>
-         </div>
-       <h3 class="job-title">javascript developer</h3>
-       <p class="location"> <i class="fas fa-map-market-alt"></i> 
-       <span>mumbai , india</span></p>
-       <div class="tags">
-          <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 25k</span></p>
-          <p><i class="fas fa-briefase"></i><span>intership</span></p>
-          <p><i class="fas fa-clock"></i><span>night shift</span></p>
-       </div>
-      <div class="flex-btn">
-        <a href="view_job.html1" class="btn">view details </a>
-        <button type="submit" class="far fa-heart" name="save"> </button>
-     
-      </div>
-   </div>
-     
-     
-      <div class="box">
-            <div class="company">
-          <img src="imgs/icon-4.jpg" alt="">
-          <div>
-              <h3>IT world</h3>
-              <p>19 days ago</p>
-           </div>
-         </div>
-       <h3 class="job-title">junior front-end</h3>
-       <p class="location"> <i class="fas fa-map-market-alt"></i> 
-       <span>mumbai , india</span></p>
-       <div class="tags">
-          <p><i class="fas fa-indian-rupee-sign"></i><span>20k - 50k</span></p>
-          <p><i class="fas fa-briefase"></i><span>contract</span></p>
-          <p><i class="fas fa-clock"></i><span>fixed shift</span></p>
-       </div>
-      <div class="flex-btn">
-        <a href="view_job.html1" class="btn">view details </a>
-        <button type="submit" class="far fa-heart" name="save"> </button>
-     
-      </div>
-   </div>
-     
-     
-     
-      <div class="box">
-            <div class="company">
-          <img src="imgs/icon-5.png" alt="">
-          <div>
-              <h3>info statics</h3>
-              <p>8 days ago</p>
-           </div>
-         </div>
-       <h3 class="job-title">junior assistant</h3>
-       <p class="location"> <i class="fas fa-map-market-alt"></i> 
-       <span>mumbai , india</span></p>
-       <div class="tags">
-          <p><i class="fas fa-indian-rupee-sign"></i><span>5000</span></p>
-          <p><i class="fas fa-briefase"></i><span>temperary</span></p>
-          <p><i class="fas fa-clock"></i><span>flexible shifts</span></p>
-       </div>
-      <div class="flex-btn">
-        <a href="view_job.html1" class="btn">view details </a>
-        <button type="submit" class="far fa-heart" name="save"> </button>
-     
-      </div>
-   </div>
-     
-     
-      <div class="box">
-            <div class="company">
-          <img src="imgs/icon-6.png" alt="">
-          <div>
-              <h3>mass idea</h3>
-              <p>2 month ago</p>
-           </div>
-         </div>
-         <h3 class="job-title">PHP developer</h3>
-         <p class="location"> <i class="fas fa-map-market-alt"></i> 
-         <span>mumbai, india</span></p>
-         <div class="tags">
-            <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 25k</span></p>
-            <p><i class="fas fa-briefase"></i><span>part-time</span></p>
-            <p><i class="fas fa-clock"></i><span>day shift</span></p>
-         </div>
-         <div class="flex-btn">
-         <a href="view_job.html1" class="btn">view details </a>
-         <button type="submit" class="far fa-heart" name="save"> </button>
-         </div>
-      </div>
   
-    </div>
 
-    </section>
+    <div class="box" id="10200">
+          <div class="company" id="10201">
+        <img src="imgs/icon-2.png" alt="" id="10202">
+        <div id="10203">
+            <h3 id="10204">All Media Ltd</h3>
+            <p id="10205">2 Days ago</p>
+         </div>
+       </div>
+     <h3 class="job-title" id="10206">Qualified Developer</h3>
+     <p class="location" id="10207"> <i class="fas fa-map-market-alt"></i> 
+     <span>Mumbai , India</span></p>
+     <div class="tags" id="10208">
+        <p><i class="fas fa-indian-rupee-sign" id="10209"></i><span>9000</span></p>
+        <p><i class="fas fa-briefase" id="10210"></i><span>Full-time</span></p>
+        <p><i class="fas fa-clock" id="10211"></i><span>Flexible Shifts</span></p>
+     </div>
+    <div class="flex-btn">
+      <a href="view_job.html" class="btn">View Details </a>
+      <button type="submit" class="far fa-heart" name="save"> </button>
+   
+    </div>
+ </div>
+   
+    <div class="box" id="10300">
+          <div class="company" id="10301">
+        <img src="imgs/icon-3.png" alt="" id="10302">
+        <div id="10303">
+            <h3 id="10304">Software Solution</h3>
+            <p id="10305">Posted Today</p>
+         </div>
+       </div>
+     <h3 class="job-title" id="10306">Javascript Developer</h3>
+     <p class="location" id="10307"> <i class="fas fa-map-market-alt"></i> 
+     <span>Mumbai , India</span></p>
+     <div class="tags" id="10308">
+        <p><i class="fas fa-indian-rupee-sign" id="10309"></i><span>10k - 25k</span></p>
+        <p><i class="fas fa-briefase" id="10310"></i><span>Intership</span></p>
+        <p><i class="fas fa-clock" id="10311"></i><span>Night Shift</span></p>
+     </div>
+    <div class="flex-btn">
+      <a href="view_job.html" class="btn">View Details </a>
+      <button type="submit" class="far fa-heart" name="save"> </button>
+   
+    </div>
+ </div>
+   
+   
+    <div class="box" id="10400">
+          <div class="company" id="10401">
+        <img src="imgs/icon-4.jpg" alt="" id="10402">
+        <div id="10403">
+            <h3 id="10404">IT World</h3>
+            <p id="10405">19 days ago</p>
+         </div>
+       </div>
+     <h3 class="job-title" id="10406">Junior Front-end</h3>
+     <p class="location" id="10407"> <i class="fas fa-map-market-alt"></i> 
+     <span>Mumbai , India</span></p>
+     <div class="tags" id="10408">
+        <p><i class="fas fa-indian-rupee-sign" id="10409"></i><span>20k - 50k</span></p>
+        <p><i class="fas fa-briefase" id="10410"></i><span>Contract</span></p>
+        <p><i class="fas fa-clock" id="10411"></i><span>Fixed Shift</span></p>
+     </div>
+    <div class="flex-btn">
+      <a href="view_job.html" class="btn">View Details </a>
+      <button type="submit" class="far fa-heart" name="save"> </button>
+   
+    </div>
+ </div>
+   
+   
+   
+    <div class="box" id="10500">
+          <div class="company" id="10501">
+        <img src="imgs/icon-5.png" alt="" id="10502">
+        <div id="10503">
+            <h3 id="10504">Info Statics</h3>
+            <p id="10505">8 Days ago</p>
+         </div>
+       </div>
+     <h3 class="job-title" id="10506">Junior Assistant</h3>
+     <p class="location" id="10507"> <i class="fas fa-map-market-alt"></i> 
+     <span>Mumbai , India</span></p>
+     <div class="tags" id="10508">
+        <p><i class="fas fa-indian-rupee-sign" id="10509"></i><span>5000</span></p>
+        <p><i class="fas fa-briefase" id="10510"></i><span>Temperary</span></p>
+        <p><i class="fas fa-clock" id="10511"></i><span>Flexible Shifts</span></p>
+     </div>
+    <div class="flex-btn">
+      <a href="view_job.html" class="btn">View Details </a>
+      <button type="submit" class="far fa-heart" name="save"> </button>
+   
+    </div>
+ </div>
+   
+   
+    <div class="box" id="10600">
+          <div class="company", id="10601">
+        <img src="imgs/icon-6.png" alt="" id="10602">
+        <div id="10603">
+            <h3 id="10604">Mass Idea</h3>
+            <p id="10605">2 Month ago</p>
+         </div>
+       </div>
+     <h3 class="job-title" id="10606">PHP Developer</h3>
+     <p class="location" id="10607"> <i class="fas fa-map-market-alt"></i> 
+     <span>Mumbai, India</span></p>
+     <div class="tags" id="10608">
+        <p><i class="fas fa-indian-rupee-sign" id="10609"></i><span>10k - 25k</span></p>
+        <p><i class="fas fa-briefase" id="10610"></i><span>Part-time</span></p>
+        <p><i class="fas fa-clock" id="10611"></i><span>Day Shift</span></p>
+     </div>
+    <div class="flex-btn">
+      <a href="view_job.html" class="btn">View Details </a>
+      <button type="submit" class="far fa-heart" name="save"> </button>
+   
+    </div>
+ </div>
+  </div>
+  <div style="text-align: center; margin-top: 2rem;">
+  <a href="jobs.html"class="btn">View all</a>
+  </div>
+  </section>
+
+
+
+<!--all jobs section ends-->
+
 
 
 
 <!--footer section satrts-->
 
-<footer></footer>
-
-
-
-<!--footer section ends-->
 
 <footer class="footer">
 
@@ -318,40 +323,40 @@
   <section class="grid">
 
     <div class="box">
-      <h3>quick links</h3>
-      <a href="home.html"><i class="fas fa-angle-right"></i>home</a>
-      <a href="home.html"><i class="fas fa-angle-right"></i>about</a>
-      <a href="home.html"><i class="fas fa-angle-right"></i>all jobs</a>
-      <a href="home.html"><i class="fas fa-angle-right"></i>contact us</a>
-      <a href="home.html"><i class="fas fa-angle-right"></i>filter search</a>
+      <h3>Quick Links</h3>
+      <a href="home.html"><i class="fas fa-angle-right"></i>Home</a>
+      <a href="home.html"><i class="fas fa-angle-right"></i>About</a>
+      <a href="home.html"><i class="fas fa-angle-right"></i>All jobs</a>
+      <a href="home.html"><i class="fas fa-angle-right"></i>Contact us</a>
+      <a href="home.html"><i class="fas fa-angle-right"></i>Filter search</a>
     </div>
 
     <div class="box">
-      <h3>extra links</h3>
-      <a href="#"><i class="fas fa-angle-right"></i>account</a>
-      <a href="login.html"><i class="fas fa-angle-right"></i>login</a>
-      <a href="register.html"><i class="fas fa-angle-right"></i>register</a>
-      <a href="#"><i class="fas fa-angle-right"></i>post job</a>
-      <a href="#"><i class="fas fa-angle-right"></i>dashboard</a>
+      <h3>Extra links</h3>
+      <a href="#"><i class="fas fa-angle-right"></i>Account</a>
+      <a href="login.html"><i class="fas fa-angle-right"></i>Login</a>
+      <a href="register.html"><i class="fas fa-angle-right"></i>Register</a>
+      <a href="#"><i class="fas fa-angle-right"></i>Post Job</a>
+      <a href="#"><i class="fas fa-angle-right"></i>Dashboard</a>
     </div>
   
     <div class="box">
       <h3>follow us</h3>
-      <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
-      <a href="#"><i class="fab fa-twitter"></i>twitter</a>
-      <a href="#"><i class="fab fa-instagram"></i>instagram</a>
-      <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
-      <a href="#"><i class="fab fa-youtube"></i>youtube</a>
+      <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+      <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+      <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+      <a href="#"><i class="fab fa-linkedin"></i>Linkedin</a>
+      <a href="#"><i class="fab fa-youtube"></i>Youtube</a>
     </div>
   </section>
 
-  <div class="credit">&copy; copyright @ 2023 by <span>El-Samanoudy </span> | all rights reserved!</div>
+  <div class="credit">&copy; Copyright @ 2023 by <span>El-Samanoudy </span> | All rights reserved!</div>
 
 </footer>
 
-
+  <!--footer section ends-->
   <!--custom js file link-->
-  <script src="D:\ECU\8th TERM\Internet Programming\Job Portal Website\script.js"></script>
+  <script src="/script.js"></script>
 
   <script>
 
