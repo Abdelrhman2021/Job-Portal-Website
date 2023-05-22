@@ -51,31 +51,31 @@
     
 
 
-<form action="" method="post">
+<form action="index.html" method="post" id="application-form">
     <h3>Application</h3>
     <div class="flex">
         <div class="box">
             <p>First Name<span>*</span></p>
-            <input type="text" name="name" required maxlength="20"
+            <input type="text" name="name" required maxlength="20" id="fname"
             placeholder="Enter your first name" class="input">
         </div>
         <div class="box">
           <p>Last Name<span>*</span></p>
-          <input type="text" name="name" required maxlength="20"
+          <input type="text" name="name" required maxlength="20" id="lname"
           placeholder="Enter your last name" class="input">
       </div>
         <div class="box">
             <p>Email<span>*</span></p>
-            <input type="email" name="email" required maxlength="50"
+            <input type="email" name="email" required maxlength="50" id="email"
             placeholder="Enter your email" class="input">
         </div>
         <div class="box">
             <p>Phone Number<span>*</span></p>
-            <input type="tel" name="number" placeholder="Enter your number" class="input" required maxlength="14" pattern="[0-9]*">
+            <input type="tel" name="number" id="num" placeholder="Enter your number" class="input" required maxlength="14" pattern="[0-9]*">
         </div>
         <div class="box">
             <p>Experience<span>*</span></p>
-            <select name="role" required class="input">
+            <select name="role" required class="input" id="experience">
                 <option value="" selected>Select an option</option>
                 <option value="option1">Undergraduate </option>
                 <option value="option2">Freshgraduate </option>
@@ -93,10 +93,10 @@
       <p>Gender<span>*</span></p><br>
       <div class="radio-group">
         <label>
-          <input type="radio" name="gender" value="male" required> Male
+          <input type="radio" id="gender" name="gender" value="male" required> Male
         </label>
         <label>
-          <input type="radio" name="gender" value="female" required> Female
+          <input type="radio" id="gender" name="gender" value="female" required> Female
         </label>
       </div>
     </div>
@@ -163,5 +163,6 @@
 
   <!--custom js file link-->
   <script src="/script.js"></script>
+  <script src="/dist/bundle.js"></script>
 </body>
 </html>

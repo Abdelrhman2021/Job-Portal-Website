@@ -49,13 +49,13 @@
 
  <div class="account-form-container">
 
-   <section class="account-form">
+   <section class="account-form" id="login-form">
   
-      <form action=""method="post">
+      <form action="index.html"method="post">
          <h3>Welcome back!</h3>
-         <input type="email" required name="name" maxlength="50"
+         <input type="email" required name="name" maxlength="50" id="login-email"
          placeholder="Enter your email" class="input">
-         <input type="password" required name="pass" maxlength="20"
+         <input type="password" required name="pass" maxlength="20" id="login-password"
          placeholder="Enter your password" class="input">
          <p>Don't have an account? <a href="register.html">register now</a></p>
          <input type="submit" value="login now" name="submit" class="btn">
@@ -121,5 +121,6 @@
 
   <!--custom js file link-->
   <script src="/script.js"></script>
+  <script src="/dist/bundle.js"></script>
 </body>
 </html>
