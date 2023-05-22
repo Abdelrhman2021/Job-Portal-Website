@@ -18,13 +18,14 @@ const db = getFirestore(app);
 const signupForm = document.querySelector('#signup-form');
 signupForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const email = signupForm['#signup-email'].value;
-    const password = signupForm['#signup-password'].value;
-    const cpassword = signupForm['#signup-c-password'].value;
-    const name = signupForm['#signup-name'].value;
+    const email = signupForm['signup-email'].value;
+    const password = signupForm['signup-password'].value;
+    const cpassword = signupForm['signup-c-password'].value;
+    const name = signupForm['signup-name'].value;
     createUserWithEmailAndPassword(auth, email, password, name).then(cred => {
         console.log(cred.user);
         alert("Signup successful! Thank you for signing up.");
+        window.location.href = "login.html";
     });
 
     function validateName() {
@@ -106,11 +107,12 @@ signupForm.addEventListener('submit', (e) => {
 const loginForm = document.querySelector('#login-form');
 loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const email = loginForm['#login-email'].value;
-    const password = loginForm['#login-password'].value;
+    const email = loginForm['login-email'].value;
+    const password = loginForm['login-password'].value;
     signInWithEmailAndPassword(auth, email, password).then(cred => {
         console.log(cred.user);
         alert("Login successful! Welcome back.");
+        //window.location.href = "index.html";
     });
 
     function validateEmail() {
@@ -199,9 +201,13 @@ applicationForm.addEventListener('submit', async (e) => {
             gender: gender
         });
         console.log("Document written with ID: ", docRef.id);
-        // Optionally, you can redirect to a success page here
+        
+        // Redirect to index.html after successful form submission
+        window.location.href = "index.html";
+        
     } catch (e) {
         console.error("Error adding document: ", e);
         // Optionally, you can display an error message to the user here
     }
 });
+
