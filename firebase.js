@@ -180,13 +180,13 @@ onAuthStateChanged(auth, (user) => {
 const applicationForm = document.querySelector('#application-form');
 applicationForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const fname = applicationForm['#fname'].value;
-    const lname = applicationForm['#lname'].value;
-    const email = applicationForm['#email'].value;
-    const phone = applicationForm['#num'].value;
-    const experience = applicationForm['#experience'].value;
-    const birthdate = applicationForm['#birthdate'].value;
-    const gender = applicationForm['#gender'].value;
+    const fname = applicationForm['fname'].value;
+    const lname = applicationForm['lname'].value;
+    const email = applicationForm['email'].value;
+    const phone = applicationForm['num'].value;
+    const experience = applicationForm['experience'].value;
+    const birthdate = applicationForm['birthdate'].value;
+    const gender = applicationForm['gender'].value;
 
     try {
         const docRef = await addDoc(collection(db, "application"), {
@@ -199,8 +199,9 @@ applicationForm.addEventListener('submit', async (e) => {
             gender: gender
         });
         console.log("Document written with ID: ", docRef.id);
+        // Optionally, you can redirect to a success page here
     } catch (e) {
         console.error("Error adding document: ", e);
+        // Optionally, you can display an error message to the user here
     }
-
 });
