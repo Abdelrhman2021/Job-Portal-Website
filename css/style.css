@@ -265,7 +265,7 @@ text-align: center;
 .jobs-container .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,35rem);
-    gap: 1.5rem;
+    gap: 4rem;
     align-items:flex-start;
     justify-content: center;
 }
@@ -276,6 +276,8 @@ text-align: center;
     padding: 2rem;
     box-shadow: var(--box-shadow);
     overflow-x: hidden;
+    width: 370px;
+    height: 385px;
 }
 .jobs-container .box-container .box .company{
     display:flex;
