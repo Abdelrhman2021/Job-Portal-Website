@@ -28,12 +28,12 @@ numberInput.oninput = () => {
   const numericValue = parseFloat(inputValue);
 
   if (inputValue === '') {
-    clearError(numberInput);
+    //clearError(numberInput);
   } else if (isNaN(numericValue)) {
     displayError(numberInput, 'Please enter a valid number.');
     numberInput.value = '';
   } else {
-    clearError(numberInput);
+    //clearError(numberInput);
   }
 };
 
@@ -81,7 +81,7 @@ function validateFirstName() {
     return false;
   }
 
-  clearError(firstNameInput);
+  //clearError(firstNameInput);
   return true;
 }
 
@@ -91,7 +91,7 @@ function validateLastName() {
     return false;
   }
 
-  clearError(lastNameInput);
+  //clearError(lastNameInput);
   return true;
 }
 
@@ -109,7 +109,7 @@ function validateEmail() {
     return false;
   }
 
-  clearError(emailInput);
+  //clearError(emailInput);
   return true;
 }
 
@@ -121,7 +121,7 @@ function validateNumber() {
     return false;
   }
 
-  clearError(numberInput);
+  //clearError(numberInput);
   return true;
 }
 
@@ -131,7 +131,7 @@ function validateExperience() {
     return false;
   }
 
-  clearError(experienceSelect);
+  //clearError(experienceSelect);
   return true;
 }
 
@@ -141,7 +141,7 @@ function validateBirthdate() {
     return false;
   }
 
-  clearError(birthdateInput);
+  //clearError(birthdateInput);
   return true;
 }
 
@@ -159,7 +159,7 @@ function validateGender() {
     return false;
   }
 
-  clearError(genderInputs[0]);
+  //clearError(genderInputs[0]);
   return true;
 }
 
@@ -169,8 +169,8 @@ function displayError(inputElement, errorMessage) {
   inputElement.classList.add('error');
 }
 
-function clearError(inputElement) {
+/*function clearError(inputElement) {
   const errorElement = inputElement.nextElementSibling;
   errorElement.textContent = '';
   inputElement.classList.remove('error');
-}
+}*/

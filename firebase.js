@@ -179,7 +179,7 @@ onAuthStateChanged(auth, (user) => {
     }
 });
 
-const applicationForm = document.querySelector('#application-form');
+var applicationForm = document.getElementById('application-form');
 applicationForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const fname = applicationForm['fname'].value;
