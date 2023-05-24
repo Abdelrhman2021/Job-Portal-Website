@@ -1,74 +1,69 @@
-var myhttp1 = new XMLHttpRequest();
-myhttp1.open('GET', 'https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=cc3c6bd4&app_key=3fe3e17eff25c1091b93ff10a8f6a8f3&results_per_page=6', {
-    headers: {
-        'Accept': 'application/json'
-    }
-});
-myhttp1.send();
-myhttp1.addEventListener("readystatechange", function () {
-    if (myhttp1.readyState == 4 && myhttp1.status == 200) {
-        var data = JSON.parse(myhttp1.response);
+/*var myhttp = new XMLHttpRequest();
+myhttp.open('GET', 'job_data.json');
+myhttp.send();
+myhttp.addEventListener("readystatechange", function () {
+    if (myhttp.readyState == 4 && myhttp.status == 200) {
+        var data = JSON.parse(myhttp.response);
         console.log(data)
     }
-})
+})*/
 
-document.getElementById('va').addEventListener('click', function () {
-    fetch('https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=cc3c6bd4&app_key=3fe3e17eff25c1091b93ff10a8f6a8f3&results_per_page=6', {
-        headers: {
-            'Accept': 'application/json'
-        }
-    })
+ async function getJobs() {
+    // Make a GET request to the API endpoint
+    fetch('https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=cc3c6bd4&app_key=3fe3e17eff25c1091b93ff10a8f6a8f3&results_per_page=20')
         .then(response => response.json())
         .then(data => {
-            const jobsContainer = document.getElementById('jobsContainer');
+            /*// Extract the information from each job
+            const jobs = data.results;
 
-            // Iterate over each job and create HTML elements dynamically
-            data.forEach(job => {
-                const box = document.createElement('div');
-                box.classList.add('box');
+            // Get the container element in which to replace the job data
+            const container = document.getElementById('jobsContainer');
 
-                // Create the job content
-                const company = document.createElement('div');
-                company.classList.add('company');
-                // ... Create other job content elements ...
+            // Remove existing job elements
+            while (container.firstChild) {
+                container.firstChild.remove();
+            }
 
-                // Append job content elements to the box
-                box.appendChild(company);
-                // ... Append other job content elements to the box ...
+            // Loop through the jobs and create HTML elements for each job
+            for (const job of jobs) {
+                // Extract the job information
+                const categoryLabel = job.category.label;
+                const companyDisplayName = job.company.display_name;
+                const companyCreated = job.created;
+                const companyDescription = job.description;
+                const locationArea = job.location.area;
+                const salaryMax = job.salary_max;
 
-                // Append the box to the jobs container
-                jobsContainer.appendChild(box);
-            });
+                // Create HTML elements for the job data
+                const jobElement = document.createElement('div');
+                jobElement.classList.add('box');
+                jobElement.innerHTML = `
+                <div class="company">
+                  <img src="imgs/icon-1.png" alt="">
+                  <div>
+                    <h3>${companyDisplayName}</h3>
+                    <p>${companyCreated}</p>
+                  </div>
+                </div>
+                <h3 class="job-title">${categoryLabel}</h3>
+                <p class="location"><i class="fas fa-map-market-alt"></i> <span>${locationArea}</span></p>
+                <div class="tags">
+                  <p><i class="fas fa-indian-rupee-sign"></i><span>${salaryMax}</span></p>
+                  <p><i class="fas fa-briefase"></i><span>Full-time</span></p>
+                  <p><i class="fas fa-clock"></i><span>Day Shift</span></p>
+                </div>
+                <div class="flex-btn">
+                  <a href="view_job.html" class="btn">View Details</a>
+                  <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+              `;
+
+                // Append the job element to the container
+                container.appendChild(jobElement);
+                console.log(data)
+            }*/
+            console.log(data)
         })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-});
+        
 
-jtitle = document.getElementById('jtitle').value
-jloc = document.getElementById('jloc').value
-
-async function searchjobs() {
-    const url = 'https://linkedin-jobs-search.p.rapidapi.com/';
-    const options = {
-        method: 'POST',
-        headers: {
-            'content-type': 'application/json',
-            'X-RapidAPI-Key': '1e17914584msh439b3ecd9b04e01p17ae16jsn15db0eb1f70e',
-            'X-RapidAPI-Host': 'linkedin-jobs-search.p.rapidapi.com'
-        },
-        body: {
-            search_terms: 'python programmer',
-            location: 'Chicago, IL',
-            page: '1'
-        }
-    };
-
-    try {
-        const response = await fetch(url, options);
-        const result = await response.text();
-        console.log(result);
-    } catch (error) {
-        console.error(error);
-    }
 }
