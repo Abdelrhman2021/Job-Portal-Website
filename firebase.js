@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword } from 'firebase/auth';
+import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { getFirestore, collection, getDoc, getDocs } from 'firebase/firestore';
 const firebaseConfig = {
     apiKey: "AIzaSyB-yzXdWXmxLGkdb_IZ7F-Zj3ztSwNnzRY",
@@ -22,7 +22,7 @@ signupForm.addEventListener('submit', (e) => {
     const password = signupForm['signup-password'].value;
     const cpassword = signupForm['signup-c-password'].value;
     const name = signupForm['signup-name'].value;
-    createUserWithEmailAndPassword(auth, email, password, name).then(cred => {
+    createUserWithEmailAndPassword(auth, email, password).then(cred => {
         console.log(cred.user);
         alert("Signup successful! Thank you for signing up.");
         window.location.href = "login.html";
