@@ -1,3 +1,14 @@
+const form = document.querySelector('.contact form');
+const firstNameInput = document.querySelector('input[name="name"]:first-of-type');
+const lastNameInput = document.querySelector('input[name="name"]:last-of-type');
+const emailInput = document.querySelector('input[name="email"]');
+const numberInput = document.querySelector('input[name="number"]');
+const experienceSelect = document.querySelector('select[name="role"]');
+const birthdateInput = document.querySelector('input[name="birthdate"]');
+const genderInputs = document.querySelectorAll('input[name="gender"]');
+const submitBtn = document.querySelector('.contact form input[type="submit"]');
+
+
 // Toggle navbar on click
 const menuBtn = document.querySelector('#menu-btn');
 const navbar = document.querySelector('.header .flex .navbar');
@@ -27,15 +38,6 @@ numberInput.oninput = () => {
 };
 
 // Form validation on submit
-const form = document.querySelector('.contact form');
-const firstNameInput = document.querySelector('input[name="name"]:first-of-type');
-const lastNameInput = document.querySelector('input[name="name"]:last-of-type');
-const emailInput = document.querySelector('input[name="email"]');
-const numberInput = document.querySelector('input[name="number"]');
-const experienceSelect = document.querySelector('select[name="role"]');
-const birthdateInput = document.querySelector('input[name="birthdate"]');
-const genderInputs = document.querySelectorAll('input[name="gender"]');
-const submitBtn = document.querySelector('.contact form input[type="submit"]');
 
 form.onsubmit = (event) => {
   event.preventDefault(); // Prevent form submission for demonstration purposes
