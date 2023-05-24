@@ -174,3 +174,4 @@ function displayError(inputElement, errorMessage) {
   errorElement.textContent = '';
   inputElement.classList.remove('error');
 }*/
+
