@@ -20,7 +20,7 @@ const db = getDatabase(app);
 
 
 const appform = document.querySelector('#application-form')
-appform.addEventListener('submit', async (e) => {
+appform.addEventListener('submit', (e) => {
     e.preventDefault();
     var id = Date.now();
     const fname = appform['fname'].value;

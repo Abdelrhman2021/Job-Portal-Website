@@ -1,7 +1,7 @@
 var btngan = document.getElementById('va');
 btngan.onclick = getJobs();
 
-async function getJobs() {
+ function getJobs() {
     // Make a GET request to the API endpoint
     fetch('job_data.json')
         .then(response => response.json())
