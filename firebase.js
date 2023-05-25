@@ -1,6 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
-import { getDatabase, set, ref } from 'firebase/database';
+import { getAuth, createUserWithEmailAndPassword,} from 'firebase/auth';
 const firebaseConfig = {
     apiKey: "AIzaSyB-yzXdWXmxLGkdb_IZ7F-Zj3ztSwNnzRY",
     authDomain: "hr-guide-57d65.firebaseapp.com",
@@ -13,7 +12,6 @@ const firebaseConfig = {
 };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
-const db = getDatabase(app);
 
 //Create new user
 const signupForm = document.querySelector('#signup-form');
