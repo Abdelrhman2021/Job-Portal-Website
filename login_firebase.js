@@ -24,7 +24,7 @@ loginForm.addEventListener('submit', (e) => {
     signInWithEmailAndPassword(auth, email, password).then(cred => {
         console.log(cred.user);
         alert("Login successful! Welcome back.");
-        window.location.href = "index.html";
+        window.location.href = "home.html";
     })
         .catch((error) => {
             const errorCode = error.code;
