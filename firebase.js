@@ -11,7 +11,7 @@ const firebaseConfig = {
     databaseURL: "https://hr-guide-57d65-default-rtdb.firebaseio.com/"
 };
 const app = initializeApp(firebaseConfig);
-const auth = getAuth();
+const auth = getAuth(app);
 
 //Create new user
 const signupForm = document.querySelector('#signup-form');
